@@ -1,0 +1,32 @@
+.fields {
+  background-color: #cfd4d157;
+  height: 40px;
+  min-width: 250px;
+  padding: 0 0.75rem;
+  border-radius: 0.75rem;
+  border: 2px solid transparent;
+  transition: border-color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1);
+}
+
+.fields:hover,
+.fields:focus {
+  border-color: #141414;
+}
+
+.fieldsName {
+  background-color: #cfd4d157;
+  height: 40px;
+  padding: 0 0.75rem;
+  border-radius: 0.75rem;
+  border: 2px solid transparent;
+  transition: border-color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1);
+}
+
+.fieldsName {
+  width: 200px;
+}
+
+.fieldsName:hover,
+.fieldsName:focus {
+  border-color: #141414;
+}

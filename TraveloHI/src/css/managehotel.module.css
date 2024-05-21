@@ -1,0 +1,126 @@
+.create {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.hotelField,
+.facilityField,
+.hotelImgField,
+.hotelRoomsField {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+  width: 100%;
+}
+
+.hotelRoomsField {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.facilityField {
+  text-align: left;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.hotelImgField {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.hotelImgInput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.hotelImg {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.titleDiv {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titleDiv:first-child {
+  margin-top: 0;
+}
+
+.facilityTitle,
+.hotelImgTitle,
+.hotelRoomsTitle {
+  font-family: GTHaptik;
+  font-size: 20px;
+}
+
+.facilityCB {
+  font-family: suisseregular;
+  font-size: 15px;
+}
+
+.inField {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.saveBtn,
+.removeBtn {
+  width: 100%;
+  margin-inline: 0.25rem;
+  background-color: #134577;
+  color: white;
+  padding: 8px;
+  padding-inline: 20px;
+  transition: all 0.3s cubic-bezier(0.25, 0.01, 0.25, 1);
+}
+
+.removeBtn {
+  background-color: rgb(245, 16, 16);
+}
+
+.saveBtn:hover {
+  background-color: #103053;
+}
+
+.removeBtn:hover {
+  background-color: rgb(160, 14, 14);
+}
+
+.saveBtn:active,
+.removeBtn:active {
+  scale: 0.95;
+}
+
+.arContainer {
+  display: flex;
+  width: 100%;
+}
+
+.arBtn {
+  display: flex;
+  width: 50%;
+  align-items: flex-start;
+}

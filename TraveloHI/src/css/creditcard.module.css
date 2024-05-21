@@ -1,0 +1,23 @@
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.card h4 {
+  margin: 0;
+}
+
+.card p {
+  font-size: 13px;
+}
+
+.cardRight {
+  display: flex;
+  gap: 0.25rem;
+}

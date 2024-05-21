@@ -1,0 +1,86 @@
+.gameBorder {
+  position: relative;
+  display: inline-block;
+}
+
+.infoBorder {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.players {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  height: 30px;
+  width: 100%;
+}
+
+.playerBarBorder {
+  background-color: gray;
+  height: 30px;
+  width: 100%;
+}
+
+.playerBar {
+  background-color: rgb(35, 199, 48);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.enemys {
+  position: relative;
+  height: 30px;
+  width: 100%;
+}
+
+.enemyBarBorder {
+  background-color: gray;
+  height: 30px;
+  width: 100%;
+}
+
+.enemyBar {
+  background-color: rgb(35, 199, 48);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.playerBar {
+  background-color: rgb(35, 199, 48);
+  height: 30px;
+  width: 100%;
+}
+
+.timer {
+  flex-shrink: 0;
+  background-color: rgb(180, 58, 88);
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.drawImage {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.drawImage img {
+  width: 125px;
+}

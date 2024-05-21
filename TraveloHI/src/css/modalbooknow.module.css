@@ -1,0 +1,49 @@
+.outer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.methods {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-family: GTHaptik;
+}
+
+.selected,
+.normal {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+  padding: 0.35rem;
+  padding-inline: 1rem;
+  border-radius: 7px;
+  transition: all 0.3s ease-in-out;
+  color: black;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: rgb(209, 209, 209);
+}
+
+.wallet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.wallet p {
+  margin: 0;
+  font-size: 18px;
+  font-family: suisseregular;
+  text-align: left;
+}
+
+.errorMsgRegist {
+  padding: 0;
+  margin: 0;
+  color: red;
+  font-weight: 500;
+}

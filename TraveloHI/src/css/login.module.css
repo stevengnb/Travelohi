@@ -1,0 +1,129 @@
+.loginBody {
+  background-color: #1e90ff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 5px;
+}
+
+.titleLogin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.titleLogo {
+  width: 60px;
+  height: auto;
+}
+
+.formBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  box-shadow: rgba(3, 3, 3, 0.5) 0px 6.5px 17px;
+  padding: 20px 30px;
+  border-radius: 12.5px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.login {
+  color: #141414;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+  margin: 12.5px 0px;
+}
+
+.fields {
+  background-color: #cfd4d157;
+  height: 40px;
+  padding: 0 0.75rem;
+  border-radius: 0.75rem;
+  border: 2px solid transparent;
+  transition: border-color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1);
+}
+
+.fields:hover,
+.fields:focus {
+  border-color: #141414;
+}
+
+.text-href {
+  padding: 0;
+  margin: 0;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.divider {
+  background-color: rgb(194, 194, 194);
+  height: 2px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.loginBtn,
+.registerBtn {
+  margin-top: 10px;
+  background-color: #1b71c7;
+  color: white;
+  transition: all 0.3s cubic-bezier(0.25, 0.01, 0.25, 1);
+}
+
+.loginBtn:hover,
+.registerBtn:hover {
+  background-color: #134577;
+}
+
+.loginOtpBtn {
+  background-color: #dbdbdb;
+  border: 2px solid transparent;
+  transition: all 0.3s cubic-bezier(0.25, 0.01, 0.25, 1);
+}
+
+.loginOtpBtn:hover {
+  border-color: #141414;
+}
+
+.loginBtn:active,
+.loginOtpBtn:active,
+.registerBtn:active {
+  transform: scale(0.95);
+}
+
+.backButton {
+  position: absolute;
+  top: 8%;
+  left: 6%;
+  font-size: 1.25rem;
+}
+
+.backButton:active {
+  font-size: 1.15rem;
+}
+
+.errorMsg {
+  padding: 0;
+  margin: 0;
+  color: red;
+  font-weight: 500;
+  height: 30px;
+}
+
+.textHref {
+  padding: 0;
+  margin: 5px;
+  text-decoration: underline;
+  cursor: pointer;
+}

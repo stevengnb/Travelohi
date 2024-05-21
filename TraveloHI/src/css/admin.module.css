@@ -1,0 +1,43 @@
+.adminBody {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar {
+  width: 20%;
+  height: 100%;
+  background-color: #03254c;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: space-around;
+  padding: 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow-y: auto;
+}
+
+.menu:hover {
+  cursor: pointer;
+  scale: 1.05;
+}
+
+.menu p {
+  font-family: GTHaptik;
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+
+.menu {
+  transition: all 0.3s ease-in-out;
+}
+
+.content {
+  width: 80%;
+  height: 100%;
+  margin-left: 20%;
+  overflow-y: auto;
+}

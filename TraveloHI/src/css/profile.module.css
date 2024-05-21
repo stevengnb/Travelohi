@@ -1,0 +1,308 @@
+.profileBody {
+  height: 100vh;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.errorMsg {
+  padding: 0;
+  margin: 0.5rem;
+  color: red;
+  font-weight: 500;
+}
+
+.allContent {
+  width: 70%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: calc(10px + 3vw);
+  height: 85%;
+}
+
+.title {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-family: HBBold;
+  letter-spacing: 1px;
+  font-size: 2rem;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: calc(175px + 2vh);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 8px;
+  padding: 20px 30px;
+  border-radius: 12.5px;
+  gap: 0.5rem;
+  background-color: #ffffff;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.info {
+  display: flex;
+  gap: 2rem;
+}
+
+.content {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 8px;
+  padding-inline: calc(20px + 0.25vw);
+  padding-top: calc(35px + 0.25vh);
+  padding-bottom: calc(35px + 0.25vh);
+  border-radius: 12.5px;
+  background-color: #ffffff;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.content::-webkit-scrollbar,
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.content::-webkit-scrollbar-thumb,
+.sidebar::-webkit-scrollbar-thumb {
+  background: #486ba1;
+  border-radius: 4px;
+}
+
+.content::-webkit-scrollbar-track,
+.sidebar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.info img {
+  max-width: 4rem;
+}
+
+.divider {
+  height: 1.5px;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: rgba(182, 182, 182, 0.54);
+}
+
+.name {
+  font-family: HBBold;
+}
+
+.info p {
+  margin: 0;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 70%;
+}
+
+.descName {
+  font-size: 14px;
+}
+
+.profPic {
+  width: 30%;
+  height: 4rem;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.btnDiv {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  gap: 5px;
+}
+
+.sidebarBtn,
+.adminBtn {
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 7px;
+  transition: all 0.25s ease-in-out;
+}
+
+.sidebarBtn:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+.selected {
+  background-color: rgb(230, 230, 230);
+}
+
+.sidebarBtn {
+  display: flex;
+  gap: 2rem;
+}
+
+.sidebarText {
+  margin: 0;
+  font-family: HBBold;
+  letter-spacing: 0.25px;
+}
+
+.sidebarBtn:last-child {
+  color: red;
+}
+
+.adminBtn {
+  background-color: #1b71c7;
+  color: white;
+}
+
+.adminBtn:hover {
+  background-color: #135394;
+}
+
+.userInfo,
+.userEmail,
+.addCredit {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+  padding: 20px;
+  border-radius: 12.5px;
+}
+
+.fieldT {
+  font-family: HBBold;
+  font-size: 14px;
+}
+
+.fields {
+  background-color: #cfd4d157;
+  height: 40px;
+  width: 100%;
+  padding: 0 0.75rem;
+  border-radius: 0.75rem;
+  border: 2px solid transparent;
+  transition: border-color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1);
+}
+
+.fields:hover,
+.fields:focus {
+  border-color: #141414;
+}
+
+.component p,
+.component2 p {
+  margin: 0;
+}
+
+.component,
+.component2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.component .field {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.component2 {
+  align-items: flex-start;
+}
+
+.saveBtn,
+.cancelBtn {
+  margin-inline: 0.25rem;
+  background-color: #1b71c7;
+  color: white;
+  padding: 8px;
+  padding-inline: 20px;
+  transition: all 0.3s cubic-bezier(0.25, 0.01, 0.25, 1);
+}
+
+.saveBtn:hover {
+  background-color: #134577;
+}
+
+.cancelBtn:hover {
+  outline: solid 1px #1b71c7;
+}
+
+.saveBtn:active,
+.cancelBtn:active {
+  scale: 0.95;
+}
+
+.cancelBtn {
+  background-color: white;
+  color: #1b71c7;
+}
+
+.disabledBtn {
+  color: grey;
+}
+
+.imageUpload {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.profilePhoto {
+  width: 100%;
+  margin-bottom: 1rem;
+
+  img {
+    width: 80%;
+  }
+}
+
+.addCC,
+.addCCName {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.addCC {
+  flex-direction: column;
+}
+
+.addCCName {
+  justify-content: space-between;
+}
+
+.haha,
+.ccField,
+.inField {
+  width: 100%;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.icon:last-child {
+  color: red;
+}
+
+@media (max-width: 700px) {
+  .allContent {
+    flex-direction: column;
+  }
+
+  .sidebar,
+  .content {
+    width: 90%;
+  }
+}

@@ -1,0 +1,242 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: white;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+  transition: all 0.6s linear;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.loginNav,
+.loginNav1 {
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 7px;
+  transition: all 0.25s ease-in-out;
+}
+
+.loginNav:hover,
+.loginNav1:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+.dropdownPay {
+  width: 20px;
+  height: 20px;
+}
+
+.payResult {
+  margin-left: -6rem;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 6px;
+  width: 250px;
+  overflow-y: auto;
+  margin-top: 1.2rem;
+  gap: 0.5rem;
+  padding: 1rem;
+  z-index: 20;
+}
+/* 
+.loginNav1:hover + .payResult {
+  display: flex;
+} */
+
+.payment {
+  font-size: 18px;
+  font-family: GTHaptik;
+}
+
+.payChapter {
+  text-align: left;
+  font-size: 15px;
+  font-family: suisseregular;
+  height: 1rem;
+}
+
+.fromTravelohi {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.selects {
+  position: relative;
+  width: 90px;
+  height: 40px;
+  border-radius: 6px;
+  font-family: GTHaptik;
+  font-size: 18px;
+  color: #535353;
+}
+
+.loginPic {
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.registerBtn {
+  width: 84px;
+  background-color: #1b71c7;
+  color: white;
+  padding: 8px;
+  transition: all 0.3s cubic-bezier(0.25, 0.01, 0.25, 1);
+}
+
+.registerBtn:hover {
+  background-color: #134577;
+}
+
+.registerBtn:active {
+  scale: 0.95;
+}
+
+.searchBar {
+  margin-left: 2rem;
+  outline: 1px solid rgb(148, 148, 148);
+  padding: 0.5rem;
+  padding-inline: 0.75rem;
+  border-radius: 15px;
+  font-family: HBBold;
+  color: rgb(68, 68, 68);
+  border: 0;
+  width: 15rem;
+}
+
+.rightNav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5vw;
+  background-color: white;
+  transition: all 0.6s linear;
+}
+
+.rightNav p,
+.logo p {
+  text-decoration: none;
+  font-family: HBBold;
+  color: rgb(51, 51, 51);
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-inline: 0.5rem;
+  transition: all 0.25s linear;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo p {
+  font-size: 20px;
+}
+
+.logo img {
+  max-width: 2rem;
+}
+
+.smallNav {
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2rem;
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+
+.smallNav div {
+  width: 2rem;
+  height: 0.2rem;
+  background-color: black;
+  border-radius: 0.1rem;
+  transition: all 0.5s;
+}
+
+.smallNav input {
+  position: absolute;
+  width: 2rem;
+  height: 1.5rem;
+  z-index: 2;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.smallNav input:checked ~ div:nth-child(2) {
+  opacity: 0;
+}
+
+.smallNav input:checked ~ div:nth-child(3) {
+  width: 1.5rem;
+}
+
+.smallNav input:checked ~ div:nth-child(4) {
+  opacity: 0;
+}
+
+.payContainer {
+  position: relative;
+}
+
+.fromTravelohi {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .smallNav {
+    display: flex;
+  }
+
+  .rightNav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40vw;
+    height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    z-index: -2;
+    transform: translateX(100%);
+    transition: all 1s;
+    margin-right: 25px;
+  }
+
+  .navIn {
+    transform: translateX(0);
+  }
+
+  .navFull {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 560px) {
+  .rightNav {
+    margin-right: 30px;
+  }
+}

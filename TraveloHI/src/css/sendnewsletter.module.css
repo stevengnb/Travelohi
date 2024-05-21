@@ -1,0 +1,101 @@
+.sn {
+  width: 100%;
+  height: 100%;
+  padding: calc(20px + 5%);
+  display: flex;
+  flex-direction: column;
+}
+
+.sn p {
+  margin: 0;
+}
+
+.title p {
+  font-family: HBBold;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.emailContent {
+  margin-top: 2rem;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.errorMsg {
+  padding: 0;
+  margin: 0.5rem;
+  color: red;
+  font-weight: 500;
+}
+
+.titleContent,
+.bodyContent {
+  height: 100%;
+  width: 45%;
+  text-align: left;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.titleContent,
+.bodyContent {
+  height: 100%;
+  width: 45%;
+  text-align: left;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.titleContent p,
+.bodyContent p {
+  font-family: HBBold;
+}
+
+.bodyContent textarea {
+  resize: none;
+  height: 250px;
+  padding: 1rem;
+}
+
+.fieldT {
+  font-family: HBBold;
+  font-size: 14px;
+}
+
+.fields {
+  background-color: #cfd4d157;
+  height: 40px;
+  width: 100%;
+  padding: 0 0.75rem;
+  border-radius: 0.75rem;
+  border: 2px solid transparent;
+  transition: border-color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1);
+}
+
+.fields:hover,
+.fields:focus {
+  border-color: #141414;
+}
+
+.sendBtn {
+  width: 50%;
+  margin-inline: 0.25rem;
+  background-color: #134577;
+  color: white;
+  padding: 8px;
+  padding-inline: 20px;
+  transition: all 0.3s cubic-bezier(0.25, 0.01, 0.25, 1);
+}
+
+.sendBtn:hover {
+  background-color: #103053;
+}
+
+.sendBtn:active {
+  scale: 0.95;
+}

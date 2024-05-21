@@ -1,0 +1,456 @@
+.homeBody {
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.imageHome {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -90;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  padding: 3rem;
+  padding-top: 10rem;
+  margin-top: 26rem;
+  box-sizing: border-box;
+}
+
+.bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: -99;
+}
+
+.card,
+.hotelCard {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  gap: 0.75rem;
+  background-color: white;
+  height: 100%;
+}
+
+.hotelCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  gap: 0;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.hotelCard:hover {
+  background-color: rgb(244, 244, 244);
+}
+
+.hcContent {
+  padding: 1rem;
+  padding-top: 0.25rem;
+  width: 100%;
+  height: 100%;
+}
+
+.imagesHc {
+  width: 100%;
+}
+
+.imagesHc img {
+  border-radius: 8px;
+  height: 225px;
+  object-fit: cover;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  height: 100%;
+}
+
+.sidebarText {
+  margin: 0;
+  font-family: HBBold;
+  letter-spacing: 0.25px;
+}
+
+.sidebarBtn {
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 7px;
+  transition: all 0.25s ease-in-out;
+  display: flex;
+  gap: 2rem;
+}
+
+.sidebarBtn:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+.selected {
+  background-color: rgb(230, 230, 230);
+}
+
+.btnDiv {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  gap: 5px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.content {
+  width: 90%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 1rem;
+}
+
+.contentFields {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  width: 90%;
+}
+
+.contentFields2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  height: 100%;
+  padding: 2rem 1rem;
+  margin-top: 1rem;
+}
+
+.searchBtn {
+  height: 60%;
+  width: 95%;
+  background-color: #226ab7;
+  padding: 0.5rem;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.searchBtn:hover {
+  background-color: #113963;
+}
+
+.searchBtn:active {
+  scale: 0.9;
+}
+
+.icon2 {
+  height: 20px;
+  width: 20px;
+  color: white;
+}
+
+.fieldT {
+  margin: 0;
+  font-size: 13.5px;
+  font-family: suisseregular;
+}
+
+.searchResult {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 6px;
+  width: 100%;
+  max-height: 250px;
+  overflow-y: auto;
+  margin-top: 5px;
+  gap: 0.25rem;
+  padding: 0.5rem;
+  z-index: 20;
+}
+
+.searchResultCard {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 4px;
+  width: 100%;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  z-index: 25;
+}
+
+.searchResultCard:hover {
+  background-color: rgb(225, 225, 225);
+}
+
+.searchResult::-webkit-scrollbar {
+  width: 8px;
+}
+
+.hrAll2::-webkit-scrollbar {
+  height: 8px;
+}
+
+.searchResult::-webkit-scrollbar-thumb,
+.hrAll2::-webkit-scrollbar-thumb {
+  background: #486ba1;
+  border-radius: 10px;
+}
+
+.searchResult::-webkit-scrollbar-track,
+.hrAll2::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.srType {
+  font-size: 13px;
+  border-radius: 10px;
+  border: 2px solid #226ab7;
+  padding: 2px;
+  padding-inline: 5px;
+  font-family: GTHaptik;
+  color: #226ab7;
+}
+
+.searchResultCard p {
+  margin: 0;
+  font-size: 14px;
+  font-family: HBLight;
+}
+
+.container {
+  width: auto;
+  position: relative;
+}
+
+.contentHome {
+  width: 100vw;
+  background-color: white;
+  border-top-left-radius: 5rem;
+  border-top-right-radius: 5rem;
+  margin-top: -7rem;
+  padding: 2rem;
+  padding-top: 9rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel {
+  white-space: nowrap;
+  cursor: pointer;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.carousel::-webkit-scrollbar {
+  height: 7px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background: #486ba1;
+  border-radius: 4px;
+}
+
+.carousel::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.sliderTitle,
+.whyTitle,
+.recommendationsTitle {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.whyTitle,
+.recommendationsTitle {
+  margin-top: 3rem;
+  margin-bottom: 0.75rem;
+}
+
+.whyContent {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.wc {
+  display: flex;
+  width: 30%;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+  padding: 2rem;
+  padding-inline: 1.5rem;
+  border-radius: 12.5px;
+  background-color: #ffffff;
+  gap: 1rem;
+  justify-content: space-around;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.wc:hover {
+  transform: translateY(-8px);
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.wcImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wcP {
+  width: 100%;
+  margin: 0;
+  font-size: 14px;
+  font-family: suisseregular;
+}
+
+.wcP:first-child {
+  font-family: GTHaptik;
+  font-size: 17px;
+}
+
+.wcDesc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: left;
+}
+
+.sliderTitle h2,
+.whyTitle h2 {
+  font-family: GTHaptik, Arial, Geneva;
+  margin: 10px;
+  margin-bottom: 15px;
+}
+
+.sliderImgC {
+  height: 100%;
+  width: 35px;
+  display: flex;
+  align-items: center;
+}
+
+.sliderImg {
+  object-fit: cover;
+  width: 100%;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.rightClick,
+.leftClick {
+  cursor: pointer;
+  border-radius: 7px;
+  background-color: rgb(238, 238, 238);
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease-in-out;
+}
+
+.rightClick:hover,
+.leftClick:hover {
+  background-color: rgb(184, 184, 184);
+}
+
+.sliderIcon {
+  width: 30px;
+  height: 30px;
+  color: black;
+}
+
+.carousel img {
+  height: 250px;
+  object-fit: cover;
+  width: calc(100% / 3);
+  margin-left: 14px;
+}
+
+.carousel img:first-child {
+  margin-left: 0;
+}
+
+.wrapper {
+  max-width: 1300px;
+  position: relative;
+}
+
+.hrAll {
+  padding-inline: 4rem;
+}
+
+.hrAll2 {
+  overflow-y: auto;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .carousel img {
+    width: calc(100% / 2);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .carousel img {
+    width: 100%;
+  }
+}

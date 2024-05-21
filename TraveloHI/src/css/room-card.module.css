@@ -1,0 +1,70 @@
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  margin-bottom: 20px;
+  gap: 0.75rem;
+}
+
+.inField {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.inFieldImg {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.rcTitle {
+  font-family: GTHaptik;
+}
+
+.fieldT {
+  font-family: suisseregular;
+  font-size: 15px;
+}
+
+.rcField {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 16px;
+  width: 100%;
+}
+
+.saveBtn,
+.removeBtn {
+  width: 100%;
+  margin-inline: 0.25rem;
+  background-color: #134577;
+  color: white;
+  padding: 8px;
+  padding-inline: 20px;
+  transition: all 0.3s cubic-bezier(0.25, 0.01, 0.25, 1);
+}
+
+.saveBtn:hover {
+  background-color: #103053;
+}
+
+.removeBtn {
+  width: 40%;
+  background-color: rgb(245, 16, 16);
+}
+
+.removeBtn:hover {
+  background-color: rgb(160, 14, 14);
+}
+
+.saveBtn:active,
+.removeBtn:active {
+  scale: 0.95;
+}

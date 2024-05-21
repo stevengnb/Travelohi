@@ -1,0 +1,134 @@
+.cardAdd {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.promoTitle {
+  font-family: HBBold;
+  font-size: 18px;
+  margin-bottom: 0.75rem;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  width: 80%;
+  margin-bottom: 20px;
+  height: 80px;
+  transition: height 0.3s ease-in-out;
+}
+
+.cardExpand {
+  flex-direction: column;
+  height: 620px;
+}
+
+.editBtn {
+  color: rgb(46, 112, 211);
+  font-family: GTHaptik;
+  cursor: pointer;
+}
+
+.editBtn:hover {
+  color: rgb(22, 55, 105);
+}
+
+.contentNotExpand p {
+  font-family: suisseregular;
+}
+
+.transition {
+  transition: all 0.4s ease-in-out;
+}
+
+.contentNotExpand p:first-child {
+  font-family: HBBold;
+  font-size: 17px;
+}
+
+.contentExpand {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.downBtn {
+  display: flex;
+  gap: 2rem;
+}
+
+.promoPic {
+  width: 100%;
+  height: 45%;
+}
+
+.promoPic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.allFields {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 16px;
+  width: 100%;
+}
+
+.fieldT {
+  font-family: HBBold;
+  font-size: 14px;
+}
+
+.fields {
+  background-color: #cfd4d157;
+  height: 40px;
+  width: 100%;
+  padding: 0 0.75rem;
+  border-radius: 0.75rem;
+  border: 2px solid transparent;
+  transition: border-color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1);
+}
+
+.inField {
+  width: 100%;
+}
+
+.btn {
+  margin-inline: 0.25rem;
+  background-color: #134577;
+  color: white;
+  padding: 8px;
+  padding-inline: 20px;
+  transition: all 0.3s cubic-bezier(0.25, 0.01, 0.25, 1);
+}
+
+.btn:hover {
+  background-color: #103053;
+}
+
+.errorMsg {
+  padding: 0;
+  margin: 0.5rem;
+  color: red;
+  font-weight: 500;
+}

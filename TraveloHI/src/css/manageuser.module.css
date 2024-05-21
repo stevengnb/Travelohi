@@ -1,0 +1,72 @@
+.users {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.pic {
+  height: 100%;
+}
+
+.picc {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.info {
+  width: 25%;
+}
+
+.ban {
+  width: 10%;
+}
+
+.banBtn {
+  width: 100%;
+  margin-inline: 0.25rem;
+  background-color: #154f8a;
+  color: white;
+  padding: 8px;
+  padding-inline: 20px;
+  transition: all 0.3s cubic-bezier(0.25, 0.01, 0.25, 1);
+}
+
+.banBtn:hover {
+  background-color: #103053;
+}
+
+.banBtn:active {
+  scale: 0.95;
+}
+
+.info p {
+  font-family: suisseregular;
+  font-size: 13.5px;
+}
+
+@media (max-width: 1100px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .ban,
+  .info {
+    width: 100%;
+  }
+}

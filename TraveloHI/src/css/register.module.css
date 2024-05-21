@@ -1,0 +1,110 @@
+.registerBody {
+  background-color: #1e90ff;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.registerLoadingBody {
+  background-color: #1e90ff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.names {
+  display: flex;
+  gap: 5px;
+}
+
+.titleLogo {
+  width: 60px;
+  height: auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.profilePhoto {
+  width: 100%;
+
+  img {
+    width: 400px;
+  }
+}
+
+.imageUpload {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.registerBtn {
+  margin-top: 10px;
+  background-color: #1b71c7;
+  color: white;
+  transition: all 0.3s cubic-bezier(0.25, 0.01, 0.25, 1);
+}
+
+.registerBtn:hover {
+  background-color: #134577;
+}
+
+.formBox {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  min-height: 300px;
+  box-shadow: rgba(3, 3, 3, 0.5) 0px 6.5px 17px;
+  padding: 20px 30px;
+  border-radius: 12.5px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.loadingDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+.register {
+  color: #141414;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+  margin: 20px 0px;
+}
+
+.errorMsgRegist {
+  padding: 0;
+  margin: 0;
+  color: red;
+  font-weight: 500;
+}
+
+.textHref {
+  padding: 0;
+  margin: 0;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.registerBtn:active {
+  transform: scale(0.95);
+}

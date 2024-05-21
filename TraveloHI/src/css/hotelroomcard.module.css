@@ -1,0 +1,166 @@
+.card,
+.images,
+.details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+  border-radius: 12.5px;
+  background-color: #ffffff;
+  overflow: hidden;
+  justify-content: space-around;
+  transition: all 0.25 ease-in-out;
+  padding: 1rem;
+  gap: 0.5rem;
+}
+
+.title,
+.dTitle {
+  font-family: GTHaptik;
+  font-size: 18px;
+  text-align: left;
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.images {
+  padding: 0;
+  width: 30%;
+}
+
+.images img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.details {
+  width: 70%;
+}
+
+.roomm {
+  padding: 0.75rem;
+}
+
+.seeAll {
+  border-radius: 7px;
+  padding: 0.25rem 0.5rem;
+  background-color: #d1f0ff;
+  color: rgb(0, 0, 0);
+  font-family: HBBold;
+  font-size: 14px;
+  height: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.seeAll:hover {
+  background-color: rgb(97, 194, 243);
+}
+
+.dBg,
+.dRr {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.dBed,
+.dGuests,
+.dPolicy,
+.dInstallment {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon {
+  color: #0194f3;
+  width: 15px;
+  height: 15px;
+}
+
+.dInstallment {
+  margin: 0.5rem 0;
+}
+
+.dBed p,
+.dGuests p,
+.dPolicy p,
+.dInstallment p {
+  margin: 0;
+  font-family: suisseregular;
+  font-size: 15px;
+}
+
+.dPolicy p {
+  color: #0194f3;
+  font-family: GTHaptik;
+}
+
+.nominal,
+.nominalDisc,
+.nominalDisc2 {
+  margin: 0;
+  font-family: HBBold;
+  color: #ff5e1f;
+  font-size: 20px;
+}
+
+.nominalDisc,
+.nominalDisc2 {
+  font-size: 13px;
+}
+
+.nominalDisc {
+  color: rgb(66, 66, 66);
+}
+
+.cartOrBuy {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.selectBtn {
+  border-radius: 7px;
+  padding: 1rem 0.5rem;
+  background-color: #ff5e1f;
+  color: white;
+  font-family: HBBold;
+  font-size: 14px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.selectBtn:hover {
+  background-color: #b14014;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.inButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 50%;
+}
